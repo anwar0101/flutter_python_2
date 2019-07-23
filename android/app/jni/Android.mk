@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
-CRYSTAX_PATH := C:\Users\shuvo\AppData\Local\Android\Sdk\crystax_ndk\crystax-ndk-10.3.2
+CRYSTAX_PATH :=/home/anwar/Android/Sdk/crystax-ndk-10.3.2
 
 
 # Build libpybridge.so
