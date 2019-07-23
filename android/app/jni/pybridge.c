@@ -218,7 +218,7 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* vm, void* aReserved)
 //com.learnprogramming.codecamp.python.interpreter
 //flutterdesign.learning.com.flutter_python_2.interpreter;
 //com_learnprogramming_codecamp_python_interpreter
-JNIEXPORT jint JNICALL Java_flutterdesign_learning_com_flutter_python_2_interpreter_PyBridge_start
+JNIEXPORT jint JNICALL Java_flutterdesign_learning_com_flutterpython2_interpreter_PyBridge_start
         (JNIEnv *env, jobject instance, jstring path)
 {
     LOG("Initializing the Python interpreter");
@@ -226,7 +226,7 @@ JNIEXPORT jint JNICALL Java_flutterdesign_learning_com_flutter_python_2_interpre
     myObj = (*env)->NewGlobalRef(env, instance);
 
     jclass  clz = (*env)->FindClass(env,
-                                        "flutterdesign/learning/com/flutter_python_2/interpreter/PyBridge");
+                                        "flutterdesign/learning/com/flutterpython2/interpreter/PyBridge");
     jniHelperClz = (*env)->NewGlobalRef(env, clz);
     //com.learnprogramming.codecamp.python.interpreter
 
@@ -257,7 +257,7 @@ JNIEXPORT jint JNICALL Java_flutterdesign_learning_com_flutter_python_2_interpre
 }
 
 
-JNIEXPORT jint JNICALL Java_flutterdesign_learning_com_flutter_python_2_interpreter_PyBridge_stop
+JNIEXPORT jint JNICALL Java_flutterdesign_learning_com_flutterpython2_interpreter_PyBridge_stop
         (JNIEnv *env, jclass jc)
 {
     LOG("Finalizing the Python interpreter");
@@ -272,7 +272,7 @@ JNIEXPORT jint JNICALL Java_flutterdesign_learning_com_flutter_python_2_interpre
     file.
 
 */
-JNIEXPORT jint JNICALL Java_flutterdesign_learning_com_flutter_python_2_interpreter_PyBridge_call
+JNIEXPORT jint JNICALL Java_flutterdesign_learning_com_flutterpython2_interpreter_PyBridge_call
         (JNIEnv *env, jobject instance, jstring payload)
 {
     LOG("Call into Python interpreter");

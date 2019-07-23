@@ -1,4 +1,4 @@
-package flutterdesign.learning.com.flutter_python_2.interpreter;
+package flutterdesign.learning.com.flutterpython2.interpreter;
 
 public class PyBridge {
 

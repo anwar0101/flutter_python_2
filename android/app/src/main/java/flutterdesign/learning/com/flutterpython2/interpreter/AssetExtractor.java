@@ -7,7 +7,7 @@
  *
  */
 
-package flutterdesign.learning.com.flutter_python_2.interpreter;
+package flutterdesign.learning.com.flutterpython2.interpreter;
 
 import android.annotation.TargetApi;
 import android.content.Context;
